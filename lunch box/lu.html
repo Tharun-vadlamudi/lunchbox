@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #f3f3f3;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      width: 250px;
+      background-color: #ffffff;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .sidebar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff4081;
+      margin-bottom: 30px;
+    }
+
+    .sidebar button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .sidebar .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .sidebar .menu-item:hover {
+      background-color: #f3f3f3;
+      border-radius: 4px;
+    }
+
+    .sidebar .menu-item i {
+      margin-right: 10px;
+    }
+
+    /* Main content area styling */
+    .main-content {
+      flex: 1;
+      padding: 50px;
+      background-image: url('background.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .main-content .heading {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .main-content .subheading {
+      font-size: 24px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .main-content button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #ff4081;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Lunch Box</div>
+    <button>Build your Weekly Meal Plan</button>
+    <div class="menu-item"><i>👤</i> Profile</div>
+    <div class="menu-item"><i>📦</i> Orders</div>
+    <div class="menu-item"><i>💳</i> Payment method</div>
+    <div class="menu-item"><i>📍</i> Delivery address</div>
+    <div class="menu-item"><i>📍</i> Add zip code</div>
+    <div class="menu-item"><i>💬</i> Messages</div>
+    <div class="menu-item"><i>🔔</i> Notifications</div>
+    <div class="menu-item"><i>👥</i> Following</div>
+    <div class="menu-item"><i>💲</i> Referrals</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="heading">Home Cooking</div>
+    <div class="subheading">Without the Cooking</div>
+    <button>Explore weekly meal plans</button>
+  </div>
+
+</body>
+</html>
